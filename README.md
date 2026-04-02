@@ -6,7 +6,7 @@
 
 ## Overview
 
-This project is a comparative study between two eras of AI. It pairs a legacy **ELIZA** chatbot — operating on hardcoded pattern matching — against a modern **Large Language Model** (Qwen2.5-1.5B-Instruct), which uses probabilistic text generation and instruction-tuning.
+This project is a comparative study between two eras of AI. It pairs a legacy **ELIZA** chatbot , operating on hardcoded pattern matchingagainst a modern **Large Language Model** (Qwen2.5-1.5B-Instruct), which uses probabilistic text generation and instruction-tuning.
 
 The goal was to observe how AI has evolved from simple keyword-triggered mirroring to deep contextual understanding and task-oriented instruction following.
 
@@ -14,7 +14,7 @@ The goal was to observe how AI has evolved from simple keyword-triggered mirrori
 
 ## Components
 
-### 1. The Past — `eliza.py`
+### 1. The Past  `eliza.py`
 ELIZA simulates a Rogerian psychotherapist. It does not "understand" the user; instead, it uses regular expressions to decompose input and reassemble it into a reflective question.
 
 **Custom rules implemented (5+):**
@@ -29,7 +29,7 @@ ELIZA simulates a Rogerian psychotherapist. It does not "understand" the user; i
 
 ---
 
-### 2. The Present — `LLM.py`
+### 2. The Present  `LLM.py`
 Powered by the Hugging Face `transformers` library with an instruction-tuned model.
 
 - **Model:** `Qwen/Qwen2.5-1.5B-Instruct`
@@ -37,7 +37,7 @@ Powered by the Hugging Face `transformers` library with an instruction-tuned mod
 
 ---
 
-### 3. Comparison Interface — `chat_comparison.py`
+### 3. Comparison Interface  `chat_comparison.py`
 A custom **Tkinter GUI** for real-time, side-by-side testing. Enter a single prompt and immediately see how a rule-based system and an LLM handle the same input.
 
 ---
@@ -86,4 +86,4 @@ python LLM.py         # Standalone modern LLM
 
 ## Conclusion
 
-This lab made clear that while ELIZA is fast and lightweight, its lack of semantic understanding makes it brittle and easily confused by novel inputs. Modern LLMs, by contrast, demonstrate a high degree of reasoning and instruction-following — a significant leap in AI's capacity to assist users in genuinely meaningful ways.
+This lab made clear that while ELIZA is fast and lightweight, its lack of semantic understanding makes it brittle and easily confused by novel inputs. Modern LLMs, by contrast, demonstrate a high degree of reasoning and instruction following  a significant leap in AI's capacity to assist users in genuinely meaningful ways.
